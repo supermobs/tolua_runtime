@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		673C26BD1DCDD9EC00D3480F /* lsproto.c in Sources */ = {isa = PBXBuildFile; fileRef = 673C26B01DCDD38600D3480F /* lsproto.c */; };
+		673C26BE1DCDD9F600D3480F /* md5lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 673C26AC1DCDD2C100D3480F /* md5lib.c */; };
+		673C26BF1DCDDAE600D3480F /* sproto.c in Sources */ = {isa = PBXBuildFile; fileRef = 673C26B61DCDD38600D3480F /* sproto.c */; };
+		673C26C01DCDDAEF00D3480F /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 673C26AA1DCDD2C100D3480F /* md5.c */; };
 		8400929F1CCF43D600F89A56 /* tolua.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8400929E1CCF43D600F89A56 /* tolua.h */; };
 		840092A11CCF43D600F89A56 /* tolua.m in Sources */ = {isa = PBXBuildFile; fileRef = 840092A01CCF43D600F89A56 /* tolua.m */; };
 		840092A81CCF44F800F89A56 /* libluajit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 840092A71CCF44F800F89A56 /* libluajit.a */; };
@@ -20,6 +24,7 @@
 		840092BC1CCF455100F89A56 /* strbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092B71CCF455100F89A56 /* strbuf.c */; };
 		840092E11CCF45A800F89A56 /* auxiliar.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092BE1CCF45A800F89A56 /* auxiliar.c */; };
 		840092E21CCF45A800F89A56 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092C01CCF45A800F89A56 /* buffer.c */; };
+		840092E31CCF45A800F89A56 /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092C21CCF45A800F89A56 /* compat.c */; };
 		840092E41CCF45A800F89A56 /* except.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092C41CCF45A800F89A56 /* except.c */; };
 		840092E51CCF45A800F89A56 /* inet.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092C61CCF45A800F89A56 /* inet.c */; };
 		840092E61CCF45A800F89A56 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 840092C81CCF45A800F89A56 /* io.c */; };
@@ -50,6 +55,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		673C26AA1DCDD2C100D3480F /* md5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		673C26AB1DCDD2C100D3480F /* md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		673C26AC1DCDD2C100D3480F /* md5lib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = md5lib.c; sourceTree = "<group>"; };
+		673C26AD1DCDD2C100D3480F /* md5lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = md5lib.h; sourceTree = "<group>"; };
+		673C26AF1DCDD38600D3480F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		673C26B01DCDD38600D3480F /* lsproto.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lsproto.c; sourceTree = "<group>"; };
+		673C26B11DCDD38600D3480F /* lsproto1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lsproto1.c; sourceTree = "<group>"; };
+		673C26B21DCDD38600D3480F /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		673C26B31DCDD38600D3480F /* msvcint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = msvcint.h; sourceTree = "<group>"; };
+		673C26B41DCDD38600D3480F /* print_r.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = print_r.lua; sourceTree = "<group>"; };
+		673C26B51DCDD38600D3480F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		673C26B61DCDD38600D3480F /* sproto.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sproto.c; sourceTree = "<group>"; };
+		673C26B71DCDD38600D3480F /* sproto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sproto.h; sourceTree = "<group>"; };
+		673C26B81DCDD38600D3480F /* sproto.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = sproto.lua; sourceTree = "<group>"; };
+		673C26B91DCDD38600D3480F /* sprotoparser.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = sprotoparser.lua; sourceTree = "<group>"; };
+		673C26BA1DCDD38600D3480F /* test.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.lua; sourceTree = "<group>"; };
+		673C26BB1DCDD38600D3480F /* testall.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = testall.lua; sourceTree = "<group>"; };
+		673C26BC1DCDD38600D3480F /* testrpc.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = testrpc.lua; sourceTree = "<group>"; };
 		8400929B1CCF43D600F89A56 /* libtolua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtolua.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8400929E1CCF43D600F89A56 /* tolua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tolua.h; sourceTree = "<group>"; };
 		840092A01CCF43D600F89A56 /* tolua.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tolua.m; sourceTree = "<group>"; };
@@ -68,6 +91,8 @@
 		840092BF1CCF45A800F89A56 /* auxiliar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auxiliar.h; sourceTree = "<group>"; };
 		840092C01CCF45A800F89A56 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
 		840092C11CCF45A800F89A56 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		840092C21CCF45A800F89A56 /* compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compat.c; sourceTree = "<group>"; };
+		840092C31CCF45A800F89A56 /* compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compat.h; sourceTree = "<group>"; };
 		840092C41CCF45A800F89A56 /* except.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = except.c; sourceTree = "<group>"; };
 		840092C51CCF45A800F89A56 /* except.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = except.h; sourceTree = "<group>"; };
 		840092C61CCF45A800F89A56 /* inet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inet.c; sourceTree = "<group>"; };
@@ -110,6 +135,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		673C26A91DCDD2C100D3480F /* md5 */ = {
+			isa = PBXGroup;
+			children = (
+				673C26AA1DCDD2C100D3480F /* md5.c */,
+				673C26AB1DCDD2C100D3480F /* md5.h */,
+				673C26AC1DCDD2C100D3480F /* md5lib.c */,
+				673C26AD1DCDD2C100D3480F /* md5lib.h */,
+			);
+			name = md5;
+			path = ../../md5;
+			sourceTree = "<group>";
+		};
+		673C26AE1DCDD38600D3480F /* sproto */ = {
+			isa = PBXGroup;
+			children = (
+				673C26AF1DCDD38600D3480F /* LICENSE */,
+				673C26B01DCDD38600D3480F /* lsproto.c */,
+				673C26B11DCDD38600D3480F /* lsproto1.c */,
+				673C26B21DCDD38600D3480F /* Makefile */,
+				673C26B31DCDD38600D3480F /* msvcint.h */,
+				673C26B41DCDD38600D3480F /* print_r.lua */,
+				673C26B51DCDD38600D3480F /* README.md */,
+				673C26B61DCDD38600D3480F /* sproto.c */,
+				673C26B71DCDD38600D3480F /* sproto.h */,
+				673C26B81DCDD38600D3480F /* sproto.lua */,
+				673C26B91DCDD38600D3480F /* sprotoparser.lua */,
+				673C26BA1DCDD38600D3480F /* test.lua */,
+				673C26BB1DCDD38600D3480F /* testall.lua */,
+				673C26BC1DCDD38600D3480F /* testrpc.lua */,
+			);
+			name = sproto;
+			path = ../../sproto;
+			sourceTree = "<group>";
+		};
 		840092921CCF43D600F89A56 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +188,8 @@
 		8400929D1CCF43D600F89A56 /* tolua */ = {
 			isa = PBXGroup;
 			children = (
+				673C26AE1DCDD38600D3480F /* sproto */,
+				673C26A91DCDD2C100D3480F /* md5 */,
 				840092BD1CCF45A800F89A56 /* luasocket */,
 				840092B31CCF455100F89A56 /* cjson */,
 				840092A91CCF450F00F89A56 /* int64.c */,
@@ -164,6 +225,8 @@
 				840092BF1CCF45A800F89A56 /* auxiliar.h */,
 				840092C01CCF45A800F89A56 /* buffer.c */,
 				840092C11CCF45A800F89A56 /* buffer.h */,
+				840092C21CCF45A800F89A56 /* compat.c */,
+				840092C31CCF45A800F89A56 /* compat.h */,
 				840092C41CCF45A800F89A56 /* except.c */,
 				840092C51CCF45A800F89A56 /* except.h */,
 				840092C61CCF45A800F89A56 /* inet.c */,
@@ -253,12 +316,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673C26BE1DCDD9F600D3480F /* md5lib.c in Sources */,
+				673C26BD1DCDD9EC00D3480F /* lsproto.c in Sources */,
 				840092A11CCF43D600F89A56 /* tolua.m in Sources */,
 				840092EB1CCF45A800F89A56 /* serial.c in Sources */,
+				840092E31CCF45A800F89A56 /* compat.c in Sources */,
 				840092EE1CCF45A800F89A56 /* udp.c in Sources */,
 				840092E41CCF45A800F89A56 /* except.c in Sources */,
 				840092AC1CCF451400F89A56 /* lpeg.c in Sources */,
 				840092BB1CCF455100F89A56 /* lua_cjson.c in Sources */,
+				673C26C01DCDDAEF00D3480F /* md5.c in Sources */,
+				673C26BF1DCDDAE600D3480F /* sproto.c in Sources */,
 				840092B01CCF452100F89A56 /* struct.c in Sources */,
 				840092B21CCF452700F89A56 /* tolua.c in Sources */,
 				8445EB151D4C9F8A00397F5E /* uint64.c in Sources */,
@@ -321,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -359,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

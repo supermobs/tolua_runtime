@@ -42,16 +42,16 @@ LUALIB_API void luaL_setfuncs_proto (lua_State *L, const luaL_Reg *l, int nup) {
 #if LUA_VERSION_NUM < 503
 
 #if LUA_VERSION_NUM < 502
-static lua_Integer lua_tointegerx(lua_State *L, int idx, int *isnum) {
-	if (lua_isnumber(L, idx)) {
-		if (isnum) *isnum = 1;
-		return lua_tointeger(L, idx);
-	}
-	else {
-		if (isnum) *isnum = 0;
-		return 0;
-	}
-}
+// static lua_Integer lua_tointegerx(lua_State *L, int idx, int *isnum) {
+// 	if (lua_isnumber(L, idx)) {
+// 		if (isnum) *isnum = 1;
+// 		return lua_tointeger(L, idx);
+// 	}
+// 	else {
+// 		if (isnum) *isnum = 0;
+// 		return 0;
+// 	}
+// }
 #endif
 
 // work around , use push & lua_gettable may be better
