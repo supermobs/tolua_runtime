@@ -22,6 +22,10 @@ LOCAL_SRC_FILES :=	../../tolua.c \
 					../../cjson/strbuf.c \
 					../../cjson/lua_cjson.c \
 					../../cjson/fpconv.c \
+					../../md5/md5.c \
+					../../md5/md5lib.c \
+					../../sproto/lsproto.c \
+					../../sproto/sproto.c \
 					../../luasocket/auxiliar.c \
  					../../luasocket/buffer.c \
  					../../luasocket/except.c \
