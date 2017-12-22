@@ -38,8 +38,7 @@ LOCAL_SRC_FILES :=	../../tolua.c \
  					../../luasocket/tcp.c \
  					../../luasocket/timeout.c \
  					../../luasocket/udp.c \
- 					../../luasocket/usocket.c \
- 					../../luasocket/compat.c \
+ 					../../luasocket/usocket.c
 
 LOCAL_WHOLE_STATIC_LIBRARIES += libluajit
 include $(BUILD_SHARED_LIBRARY)
